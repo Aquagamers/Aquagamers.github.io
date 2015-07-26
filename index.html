@@ -1,14 +1,34 @@
-<html>
-<head>
-  <title>Teamspeak 3</title>
-</head>
+<!DOCTYPE html>
+<html >
+  <head>
+      <meta charset="UTF-8">
+      <title>Text Transform</title>
+      <link rel="stylesheet" href="css/style.css">
+      <title>Aquagamers</title>
+  </head>
+
 <body>
-  <iframe allowtransparency="true" 
-          src="https://ts3wi.nitrado.net/tsviewpub.php?skey=46&sid=2124&showicons=right&bgcolor=ffffff&fontcolor=000000" 
-		  style="height:100%;width:100%" 
-		  scrolling="auto" 
-		  text-align="center"
-		  frameborder="0">Your Browser will not show Iframes
-  </iframe>
+    
+  <div class="content">
+      <div class="random"><a href="#" onclick="makeFrame(); this.onclick=null;"><span class="nbr ltr">0</span></a><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span>
+      <span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span></div>
+  </div>
+    <script src='js/modernizr.min.js'></script><script src='js/jquery.min.js'></script><script src="js/index.js"></script>
+    
+    <script language="JavaScript" type="text/javascript"> 
+function makeFrame() { 
+   ifrm = document.createElement("IFRAME"); 
+   ifrm.setAttribute("src", "https://ts3wi.nitrado.net/tsviewpub.php?skey=46&sid=2124&showicons=right&bgcolor=ffffff&fontcolor=000000"); 
+    ifrm.setAttribute("frameborder", 0); 
+   ifrm.style.width = 420+"px"; 
+   ifrm.style.height = 625+"px"; 
+   document.body.appendChild(ifrm);
+} 
+</script> 
+   
+
+
 </body>
+
+
 </html>
