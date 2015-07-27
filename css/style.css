@@ -13,7 +13,7 @@ html, body {
 html .content, body .content {
   text-align: center;
   position: relative;
-  top: 2%;
+  top: 3%;
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -31,7 +31,36 @@ iframe {
     border-radius: 0;
     display: block;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 15px;
 
 
+}
+  button {
+  color: #fff;
+  background-color: #6496c8;
+  text-shadow: -1px 1px #417cb8;
+  border: none;
+  padding: 15px 50px;
+  margin-top: 15px;
+}
+
+button:hover,
+button.hover {
+  background-color: #346392;
+  text-shadow: -1px 1px #27496d;
+}
+
+button:active,
+button.active {
+  background-color: #27496d;
+  text-shadow: -1px 1px #193047;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
 }

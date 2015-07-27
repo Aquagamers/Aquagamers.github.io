@@ -2,33 +2,30 @@
 <html >
   <head>
       <meta charset="UTF-8">
-      <title>Text Transform</title>
-      <link rel="stylesheet" href="css/style.css">
       <title>Aquagamers</title>
+      <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+      <link rel="stylesheet" href="css/style.css">
   </head>
 
 <body>
     
   <div class="content">
-      <div class="random"><a href="#" onclick="makeFrame(); this.onclick=null;"><span class="nbr ltr">0</span></a><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span>
+      <div class="random"><span class="nbr ltr" style="color: #58b6e0 ">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span>
       <span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span></div>
   </div>
     <script src='js/modernizr.min.js'></script><script src='js/jquery.min.js'></script><script src="js/index.js"></script>
     
-    <script language="JavaScript" type="text/javascript"> 
-function makeFrame() { 
-   ifrm = document.createElement("IFRAME"); 
-   ifrm.setAttribute("src", "https://ts3wi.nitrado.net/tsviewpub.php?skey=46&sid=2124&showicons=right&bgcolor=ffffff&fontcolor=000000"); 
-    ifrm.setAttribute("frameborder", 0); 
-   ifrm.style.width = 420+"px"; 
-   ifrm.style.height = 625+"px"; 
-   document.body.appendChild(ifrm);
-} 
-</script> 
-   
+    <p></p>
+    
 
-
-</body>
+            <div style="text-align:center;">
+            <a href="ts3server://78.143.39.223/?port=10750"><button>TEAMSPEAK BETRETEN</button></a>
+            <button onclick="var ifr=document.getElementsByName('Right')[0]; ifr.src=ifr.src;">Refresh</button>
+            </div>
+    
+            <iframe name="Right" src="https://ts3wi.nitrado.net/tsviewpub.php?skey=46&sid=2124&showicons=right&bgcolor=ffffff&fontcolor=000000" frameborder="none" width="420" height="625"> </iframe>
+ 
+   </body>
 
 
 </html>
